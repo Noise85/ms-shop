@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:h2:~/delivery;DB_CLOSE_ON_EXIT=FALSE
+    platform: h2
+    username: sa
+    password: sa
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+###
+#   H2 Settings
+###
+  h2:
+    console:
+      enabled: true
+## Server port and logging config
+server:
+  port: 8082
+logging:
+  level:
+    org:
+      springframework: INFO
