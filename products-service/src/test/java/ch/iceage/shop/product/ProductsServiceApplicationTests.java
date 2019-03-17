@@ -1,4 +1,4 @@
-package com.example.shop.delivery;
+package ch.iceage.shop.product;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class DeliveryServiceApplicationTests {
+public class ProductsServiceApplicationTests {
 
 	@Test
 	public void contextLoads() {
